@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:enabled="true"
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_24"/>
+
+    <item android:title="History"
+        android:enabled="true"
+        android:id="@+id/history"
+        android:icon="@drawable/ic_history_24"/>
+
+    <item android:title="Inbox"
+        android:enabled="true"
+        android:id="@+id/inbox"
+        android:icon="@drawable/ic_mail_24"/>
+
+    <item android:title="Profile"
+        android:enabled="true"
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_user_24"/>
+</menu>
