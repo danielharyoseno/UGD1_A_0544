@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
                 inputPassword.setError("Password Must Be Filled With Text")
                 checkLogin = false
             }
-            if(username =="admin" && password == "0544") {
+            if(username =="admin" && password == "admin") {
                 checkLogin=true
             }
             if (!checkLogin) return@setOnClickListener
