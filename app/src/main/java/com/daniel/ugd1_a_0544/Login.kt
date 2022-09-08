@@ -4,19 +4,18 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.EditText
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputLayout
 
-class MainActivity : AppCompatActivity() {
+class Login : AppCompatActivity() {
     private lateinit var inputUsername : TextInputLayout
     private lateinit var inputPassword : TextInputLayout
     private lateinit var mainLayout: ConstraintLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_login)
 
         inputUsername = findViewById(R.id.inputLayoutUsername)
         inputPassword = findViewById(R.id.inputLayoutPassword)
@@ -43,7 +42,7 @@ class MainActivity : AppCompatActivity() {
                 inputPassword.setError("Password Must Be Filled With Text")
                 checkLogin = false
             }
-            if(username =="admin" && password == "admin") {
+            if(username =="admin" && password == "kelompok16") {
                 checkLogin=true
             }
             if (!checkLogin) return@setOnClickListener
