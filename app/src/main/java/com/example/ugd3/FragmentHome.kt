@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.ugd3.entitiy.Dummy
+import com.example.ugd3.entitiy.Home
 
 class FragmentHome : Fragment() {
     override fun onCreateView(
@@ -21,7 +21,7 @@ class FragmentHome : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val layoutManager = LinearLayoutManager(context)
-        val adapter: RVDummyAdapter = RVDummyAdapter(Dummy.listOfDummy)
+        val adapter: RVHomeAdapter = RVHomeAdapter(Home.listOfHome)
 
         val rvDummy: RecyclerView = view.findViewById(R.id.rv_home)
 

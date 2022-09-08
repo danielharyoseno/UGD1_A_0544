@@ -3,14 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Coding/PBP/UGD/UGD3/app/src/main/res/layout/activity_home.xml" value="0.22826086956521738" />
         <entry key="..\:/Coding/PBP/UGD/UGD3/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Coding/PBP/UGD/UGD3/app/src/main/res/layout/fragment_history.xml" value="0.22826086956521738" />
         <entry key="..\:/Coding/PBP/UGD/UGD3/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/Coding/PBP/UGD/UGD3/app/src/main/res/layout/fragment_inbox.xml" value="0.22826086956521738" />
+        <entry key="..\:/Coding/PBP/UGD/UGD3/app/src/main/res/layout/fragment_profile.xml" value="0.18432971014492755" />
         <entry key="..\:/Coding/PBP/UGD/UGD3/app/src/main/res/layout/fragment_user.xml" value="0.22826086956521738" />
         <entry key="..\:/Coding/PBP/UGD/UGD3/app/src/main/res/layout/rv_item_home.xml" value="0.6" />
         <entry key="..\:/Coding/PBP/UGD/UGD3/app/src/main/res/layout/rv_item_mahasiswa.xml" value="0.22826086956521738" />
         <entry key="..\:/Coding/PBP/UGD/UGD3/app/src/main/res/menu/bottom_nav.xml" value="0.2604166666666667" />
+        <entry key="..\:/Coding/PBP/UGD/UGD3/app/src/main/res/menu/home_menu.xml" value="0.1" />
       </map>
     </option>
   </component>
