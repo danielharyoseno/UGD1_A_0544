@@ -14,17 +14,30 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        changeFragment(FragmentHome())
-    }
+        val homeFragment=FragmentHome()
+        val historyFragment=FragmentHistory()
+        val inboxFragment=FragmentInbox()
+        val profileFragment=FragmentProfile()
 
-    private fun changeFragment(fragment: Fragment?) {
-        if(fragment != null){
-            getSupportFragmentManager()
-                .beginTransaction()
-                .replace(R.id.layout_fragment, fragment)
-                .commit()
+        setCurrentFragment(homeFragment)
+
+        val bottomNavigationView = findViewById<com.google.android.material.bottomnavigation.BottomNavigationView>(R.id.NavBar)
+        bottomNavigationView.setOnNavigationItemSelectedListener{
+            when(it.itemId){
+                R.id.home->setCurrentFragment(homeFragment)
+                R.id.history->setCurrentFragment(historyFragment)
+                R.id.inbox->setCurrentFragment(inboxFragment)
+                R.id.profile->setCurrentFragment(profileFragment)
+            }
+            true
         }
     }
+
+    private fun setCurrentFragment(fragment:Fragment)=
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.layout_fragment,fragment)
+            commit()
+        }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         val menuInflater = MenuInflater(this)
